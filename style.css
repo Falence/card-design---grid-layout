@@ -1,0 +1,101 @@
+/* GENERAL RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/* CARDS  */
+.container {
+    width: 60%;
+    margin: 100px auto;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    padding: 54px;
+    overflow: hidden;
+}
+
+.card--sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card--suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card__heading {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 95%);
+}
+
+.card__img {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+
+/* BUTTONS */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 80px;
+    padding: 10px 30px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: all .3s;
+}
+
+.btn:hover,
+.btn:active {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+/* COLOR UTILITY  */
+.color-orange { color: hsl(31, 77%, 52%); }
+.color-dark-cyan { color: hsl(184, 100%, 22%); }
+.color-very-dark-cyan { color: hsl(179, 100%, 13%); }
+
+
+/* MEDIA QUERIES */
+/* 
+    The choosen breakpoints below makes the design responsive
+    on all point between 375px and 1440px
+*/
+@media only screen and (max-width: 1312px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 85%;
+    }
+}
